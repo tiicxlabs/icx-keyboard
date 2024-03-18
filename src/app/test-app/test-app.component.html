@@ -1,0 +1,4 @@
+<button (click)="toggleKeyboard()">Toggle Keyboard</button>
+<input type="text" placeholder="Click here to use the virtual keyboard" [(ngModel)]="typedText">
+<app-virtual-keyboard *ngIf="keyboardVisible" (keyPress)="onKeyTyped($event)"></app-virtual-keyboard>
+<p>Typed Text: {{ typedText }}</p>

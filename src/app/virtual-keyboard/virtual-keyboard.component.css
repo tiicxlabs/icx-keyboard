@@ -1,0 +1,60 @@
+.keyboard-container {
+  position: absolute;
+  border: 1px solid #d9d9d9;
+  padding: 2px;
+  background-color: #000000;
+  cursor: move;
+  width: auto; /* Permite que o contêiner cresça conforme necessário */
+  min-width: 75%; /* Garante que o contêiner tenha pelo menos a largura total das teclas */
+  max-width: 100%;
+}
+
+.key-row {
+  display: flex;
+  justify-content: center; /* Alinha as teclas à esquerda */
+  margin-bottom: 0px;
+}
+
+.key {
+  /*min-width: 8%; /* Tamanho mínimo baseado no percentual */
+  /*max-width: 8%; /* Tamanho máximo para garantir que todas as teclas tenham o mesmo tamanho */  
+  width: 8%;
+  border: 0px solid #000;
+  padding: 26px;
+  margin: 2px 2px;
+  background-color: #d9d9d9;
+  cursor: pointer;
+  text-align: center;
+  font-weight: bold; /* Coloca a fonte em negrito */
+  font-size: calc(120% * 26px); /* Define o tamanho da fonte como 75% da altura da tecla */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.key:hover {
+  background-color: #cbcbcb;
+}
+
+.key:active {
+  background-color: #b2b2b2;
+  transform: translateY(1px);
+}
+
+.special-key {
+  /*min-width: 16%; /* Tamanho mínimo maior para teclas especiais */
+  /*width: 16%; /* Largura maior para teclas especiais */
+  flex-grow: 1;
+  background-color: #e0e0e0;
+  font-weight: bold; /* Coloca a fonte em negrito */
+}
+
+.special-key:hover {
+  background-color: #cbcbcb;
+}
+
+.special-key:active {
+  background-color: #b2b2b2;
+  transform: translateY(1px);
+}
+

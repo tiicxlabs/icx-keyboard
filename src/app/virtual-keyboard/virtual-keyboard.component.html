@@ -1,0 +1,64 @@
+<p>virtual-keyboard works!</p>
+<div class="keyboard-container" #keyboard (mousedown)="onDragStart($event)">
+    <div class="key-row">
+      <!--<button class="key" (click)="onKeyPress('!')">!</button>-->
+      <button class="key" (click)="onKeyPress('1')">1</button>
+      <button class="key" (click)="onKeyPress('2')">2</button>
+      <button class="key" (click)="onKeyPress('3')">3</button>
+      <button class="key" (click)="onKeyPress('4')">4</button>
+      <button class="key" (click)="onKeyPress('5')">5</button>
+      <button class="key" (click)="onKeyPress('6')">6</button>
+      <button class="key" (click)="onKeyPress('7')">7</button>
+      <button class="key" (click)="onKeyPress('8')">8</button>
+      <button class="key" (click)="onKeyPress('9')">9</button>
+      <button class="key" (click)="onKeyPress('0')">0</button>
+      <button class="special-key" (click)="onKeyPress('backspace')">backspace</button>    
+    </div>
+    <div class="key-row">
+      <button class="special-key" (click)="onKeyPress('tab')">Tab</button>
+      <button class="key" (click)="onKeyPress('Q')">Q</button>
+      <button class="key" (click)="onKeyPress('W')">W</button>
+      <button class="key" (click)="onKeyPress('E')">E</button>
+      <button class="key" (click)="onKeyPress('R')">R</button>
+      <button class="key" (click)="onKeyPress('T')">T</button>
+      <button class="key" (click)="onKeyPress('Y')">Y</button>
+      <button class="key" (click)="onKeyPress('U')">U</button>
+      <button class="key" (click)="onKeyPress('I')">I</button>
+      <button class="key" (click)="onKeyPress('O')">O</button>
+      <button class="key" (click)="onKeyPress('P')">P</button>      
+    </div>
+    <div class="key-row">
+      <button class="key" (click)="onKeyPress('A')">A</button>
+      <button class="key" (click)="onKeyPress('S')">S</button>
+      <button class="key" (click)="onKeyPress('D')">D</button>
+      <button class="key" (click)="onKeyPress('F')">F</button>
+      <button class="key" (click)="onKeyPress('G')">G</button>
+      <button class="key" (click)="onKeyPress('H')">H</button>
+      <button class="key" (click)="onKeyPress('J')">J</button>
+      <button class="key" (click)="onKeyPress('K')">K</button>
+      <button class="key" (click)="onKeyPress('L')">L</button>
+      <button class="key" (click)="onKeyPress('Ç')">Ç</button>
+      <button class="special-key" (click)="onKeyPress('enter')">enter</button>
+    </div>
+    <div class="key-row">
+      <button class="key" (click)="onKeyPress('Z')">Z</button>
+      <button class="key" (click)="onKeyPress('X')">X</button>
+      <button class="key" (click)="onKeyPress('C')">C</button>
+      <button class="key" (click)="onKeyPress('V')">V</button>
+      <button class="key" (click)="onKeyPress('B')">B</button>
+      <button class="key" (click)="onKeyPress('N')">N</button>
+      <button class="key" (click)="onKeyPress('M')">M</button>
+      <button class="key" (click)="onKeyPress(',')">,</button>
+      <button class="key" (click)="onKeyPress('.')">.</button>
+      <button class="key" (click)="onKeyPress(':')">:</button>
+      <button class="key" (click)="onKeyPress('/')">/</button>
+      <button class="key" (click)="onKeyPress('*')">*</button>
+      <button class="key" (click)="onKeyPress('?')">?</button>
+    </div>
+    <div class="key-row">
+      <button class="key" (click)="onKeyPress('@')">&#64;</button>            
+      <button class="key" (click)="onKeyPress('_')">_</button>
+      <button class="key" (click)="onKeyPress('-')">-</button>
+      <button class="special-key" (click)="onKeyPress('space')">space</button>
+    </div>
+</div>
