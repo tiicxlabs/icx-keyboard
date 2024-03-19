@@ -26,9 +26,9 @@
   cursor: pointer;
   text-align: center;
   font-weight: bold; /* Coloca a fonte em negrito */
-  font-size: calc(120% * 26px); /* Define o tamanho da fonte como 75% da altura da tecla */
+  font-size: calc(75% * 26px); /* Define o tamanho da fonte como 75% da altura da tecla */
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: clip;
   white-space: nowrap;
 }
 
@@ -58,3 +58,19 @@
   transform: translateY(1px);
 }
 
+.scale-button {
+  width: auto;
+  padding: 10px;
+  margin: 2px;
+  background-color: #e0e0e0;
+  font-weight: bold;
+}
+
+.scale-button:hover {
+  background-color: #cbcbcb;
+}
+
+.scale-button:active {
+  background-color: #b2b2b2;
+  transform: translateY(1px);
+}

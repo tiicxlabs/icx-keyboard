@@ -1,5 +1,5 @@
 <p>virtual-keyboard works!</p>
-<div class="keyboard-container" #keyboard (mousedown)="onDragStart($event)">
+<div class="keyboard-container" #keyboard (mousedown)="onDragStart($event)" (touchstart)="onTouchStart($event)">
     <div class="key-row">
       <!--<button class="key" (click)="onKeyPress('!')">!</button>-->
       <button class="key" (click)="onKeyPress('1')">1</button>
@@ -60,5 +60,9 @@
       <button class="key" (click)="onKeyPress('_')">_</button>
       <button class="key" (click)="onKeyPress('-')">-</button>
       <button class="special-key" (click)="onKeyPress('space')">space</button>
+      <button class="key" (click)="setScale(50)">50%</button>
+      <button class="key" (click)="setScale(75)">75%</button>
+      <button class="key" (click)="setScale(100)">100%</button>
+      <button class="key" (click)="setScale(125)">125%</button>
     </div>
 </div>
